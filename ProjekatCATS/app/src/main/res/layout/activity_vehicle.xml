@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vehicleback"
+    android:orientation="vertical"
+    tools:context=".VehicleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:text="Weapons:"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#FFF"
+            android:fontFamily="@font/godzilla"
+            android:textSize="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/weapons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="70dp"
+            android:paddingLeft="0dp"
+            android:gravity="center_horizontal"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="power:"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:text="health:"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:text="energy:"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/powertextview"
+                        android:text="50"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/healthtextview"
+                        android:text="40"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                    <TextView
+                        android:id="@+id/energytextview"
+                        android:text="3"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/weaponimageview"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/stinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+
+            <TextView
+                android:id="@+id/weapontextwiew"
+                android:layout_marginTop="20dp"
+                android:text="stinger"
+                android:textColor="#FFF"
+                android:fontFamily="@font/godzilla"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/vehiclebox"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="pow:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"></TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/vehiclepowertextview"
+                        android:text="75"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="hlt:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"></TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/vehiclehealthtextview"
+                        android:text="200"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="egy:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFF"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"></TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/vehicleenergytextview"
+                        android:text="3/6"
+                        android:textColor="#990000"
+                        android:fontFamily="@font/godzilla"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
